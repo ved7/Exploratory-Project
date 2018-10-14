@@ -22,3 +22,4 @@ print(kmeans.labels_)
 [2 2 2 2 4 0 4 1 2 2 0 0 1 0 2 2 1 1 3 4]
 plt.scatter(X[:,0],X[:,1],c=kmeans.labels_,cmap='rainbow')
 <matplotlib.collections.PathCollection at 0x2a7e9633898>
+#just a comment
