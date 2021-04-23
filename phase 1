@@ -1,11 +1,13 @@
+#libraries
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
+#data points
 data=[(5,15),(7,20),(4,12),(8,21),(10,34),(23,10),(2,34),(7,46),(8,23),(2,15),(25,5),(17,10),(10,52),(18,11),(14,24),(2,20),(7,44),(5,46),(2,73),(7,35)]
 X=np.array(data)
 plt.scatter(X[:,0],X[:,1],label='True Position')
 <matplotlib.collections.PathCollection at 0x2a7e8eed4e0>
-
+#model
 kmeans = KMeans(n_clusters=5)
 kmeans.fit(X)
 KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
